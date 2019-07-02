@@ -1,0 +1,23 @@
+{
+  "name": "lab-pos-ms-products",
+  "version": "1.0.0",
+  "description": "Point of Sale - MS Products. Just another lab to try new things",
+  "main": "src/index.js",
+  "dependencies": {
+    "koa": "^2.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angaziz/lab-pos-ms-products.git"
+  },
+  "author": "Anggie Aziz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angaziz/lab-pos-ms-products/issues"
+  },
+  "homepage": "https://github.com/angaziz/lab-pos-ms-products#readme"
+}
