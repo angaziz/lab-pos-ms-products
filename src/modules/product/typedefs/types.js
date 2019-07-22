@@ -7,5 +7,7 @@ type Product @key(fields: "_id") {
   sellPrice: Int!
   discountPercent: Int!
   quantity: Int!
+  createdAt: String!
+  updatedAt: String!
 }
 `;

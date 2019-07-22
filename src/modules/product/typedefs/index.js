@@ -1,7 +1,12 @@
 const types = require('./types');
+const input = require('./input');
 
 module.exports = [`
 extend type Query {
   getProducts: [Product]
 }
-`, types];
+
+extend type Mutation {
+  createProduct(input: ProductInput!): Product
+}
+`, types, input];
