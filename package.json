@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "Point of Sale - MS Products. Just another lab to try new things",
   "main": "src/index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@apollo/federation": "^0.7.0",
+    "apollo-server-express": "^2.7.0",
+    "express": "^4.17.1",
+    "graphql": "^14.4.2",
+    "helmet": "^3.19.0",
+    "lodash.merge": "^4.6.2",
+    "mongoose": "^5.6.5"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
