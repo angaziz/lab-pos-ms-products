@@ -1,5 +1,5 @@
-const types = require('./types');
-const input = require('./input');
+const types = require('./types.gql');
+const input = require('./input.gql');
 
 module.exports = [`
 extend type Query {
