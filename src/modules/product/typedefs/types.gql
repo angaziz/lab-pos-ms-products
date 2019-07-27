@@ -1,6 +1,6 @@
 module.exports = `
 type Product @key(fields: "_id") {
-  _id: ID!
+  id: ID!
   code: String!
   name: String!
   buyPrice: Int!
@@ -9,11 +9,5 @@ type Product @key(fields: "_id") {
   quantity: Int!
   createdAt: String!
   updatedAt: String!
-}
-
-type PaginatedProduct implements IPagination {
-  nodes: [Product!]!
-  totalCount: Int!
-  pageInfo: PageInfo!
 }
 `;
