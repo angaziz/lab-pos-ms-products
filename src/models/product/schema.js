@@ -3,11 +3,11 @@ module.exports = (mongoose) => {
     code: {
       type: String,
       required: true,
-      uppercase: true
+      uppercase: true,
     },
     name: {
       type: String,
-      required: true
+      required: true,
     },
     buyPrice: {
       type: Number,
@@ -19,11 +19,11 @@ module.exports = (mongoose) => {
       required: true,
       min: 0,
       validate: {
-        validator: function () {
+        validator() {
           return this.sellPrice >= this.buyPrice;
         },
-        message: 'Sell price must be greater than or equal to buy price'
-      }
+        message: 'Sell price must be greater than or equal to buy price',
+      },
     },
     discountPercent: {
       type: Number,
@@ -35,13 +35,13 @@ module.exports = (mongoose) => {
     quantity: {
       type: Number,
       required: true,
-      min: 0
-    }
-  };
-  
-  const opts = {
-    timestamps: true
+      min: 0,
+    },
   };
 
-  return new mongoose.Schema(typeDefs, opts)
+  const opts = {
+    timestamps: true,
+  };
+
+  return new mongoose.Schema(typeDefs, opts);
 };
