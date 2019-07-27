@@ -1,6 +1,6 @@
 const buildApp = require('./build-app')
 
-const startServer = async () => {
+module.exports = async () => {
   const app = await buildApp();
 
   app.listen({
@@ -10,5 +10,3 @@ const startServer = async () => {
     console.log('Server is up and running');
   });
 };
-
-startServer();

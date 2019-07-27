@@ -1,0 +1,7 @@
+module.exports = `
+# Pagination query result interface
+interface IPagination {
+  totalCount: Int!
+  pageInfo: PageInfo!
+}
+`;

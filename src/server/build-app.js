@@ -3,12 +3,14 @@ require('dotenv').config();
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const { buildFederatedSchema } = require('@apollo/federation');
-const modules = require('./modules');
-const db = require('./db');
+
+const modules = require('../modules');
+const models = require('../models');
+const connectDb = require('./connect-db');
 
 module.exports = async () => {
   try {
-    await db.connect();
+    await connectDb();
 
     const server = new ApolloServer({
       schema: buildFederatedSchema([
@@ -20,7 +22,7 @@ module.exports = async () => {
       context: () => {
         return {
           db: {
-            models: db.models
+            models: models
           }
         };
       }

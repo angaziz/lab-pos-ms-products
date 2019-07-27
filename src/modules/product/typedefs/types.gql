@@ -10,4 +10,10 @@ type Product @key(fields: "_id") {
   createdAt: String!
   updatedAt: String!
 }
+
+type PaginatedProduct implements IPagination {
+  nodes: [Product!]!
+  totalCount: Int!
+  pageInfo: PageInfo!
+}
 `;
