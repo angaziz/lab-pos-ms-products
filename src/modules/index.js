@@ -1,12 +1,15 @@
 const merge = require('lodash.merge');
 const { gql } = require('apollo-server-express');
-const product = require('./product');
+
+const commonModule = require('./common');
+const productModule = require('./product');
 
 module.exports = {
   typeDefs: gql([
-    ...product.typeDefs
+    ...commonModule.typeDefs,
+    ...productModule.typeDefs
   ].join('')),
   resolvers: merge(
-    product.resolvers
+    productModule.resolvers
   )
 };
