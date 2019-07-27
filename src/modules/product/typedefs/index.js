@@ -3,7 +3,7 @@ const input = require('./input.gql');
 
 module.exports = [`
 extend type Query {
-  getProducts(offset: Int!, limit: Int!): [Product]
+  getProducts(offset: Int!, limit: Int!): [Product!]!
 }
 
 extend type Mutation {
