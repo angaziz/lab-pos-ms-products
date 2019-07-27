@@ -1,5 +1,7 @@
 const {
-  response
+  response: {
+    error: transformError
+  }
 } = require('../../../../transformations');
 
 module.exports = async (root, args, context) => {
@@ -8,6 +10,6 @@ module.exports = async (root, args, context) => {
 
     return createdProduct;
   } catch (error) {
-    throw response.error(error);
+    throw transformError(error);
   }
 };

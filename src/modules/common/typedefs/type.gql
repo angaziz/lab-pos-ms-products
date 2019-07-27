@@ -1,8 +1,0 @@
-module.exports = `
-# Pagination info for paginated query result
-type PageInfo {
-  hasNextPage: Boolean!
-  hasPreviousPage: Boolean!
-  startCursor: Int!
-}
-`;
