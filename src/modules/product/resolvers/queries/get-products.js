@@ -1,5 +1,5 @@
 const {
-  response
+  response,
 } = require('../../../../transformations');
 
 module.exports = async (_root, args, context) => {
@@ -9,6 +9,6 @@ module.exports = async (_root, args, context) => {
 
     return result;
   } catch (error) {
-    throw response.error(error);    
+    throw response.error(error);
   }
 };

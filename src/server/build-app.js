@@ -16,16 +16,14 @@ module.exports = async () => {
       schema: buildFederatedSchema([
         {
           typeDefs: modules.typeDefs,
-          resolvers: modules.resolvers
-        }
+          resolvers: modules.resolvers,
+        },
       ]),
-      context: () => {
-        return {
-          db: {
-            models: models
-          }
-        };
-      }
+      context: () => ({
+        db: {
+          models,
+        },
+      }),
     });
 
     const app = express();

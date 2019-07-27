@@ -6,6 +6,6 @@ module.exports = {
     getProducts,
   },
   Mutation: {
-    createProduct
-  }
+    createProduct,
+  },
 };

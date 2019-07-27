@@ -1,7 +1,7 @@
 const {
   response: {
-    error: transformError
-  }
+    error: transformError,
+  },
 } = require('../../../../transformations');
 
 module.exports = async (root, args, context) => {

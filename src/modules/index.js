@@ -5,9 +5,9 @@ const productModule = require('./product');
 
 module.exports = {
   typeDefs: gql([
-    ...productModule.typeDefs
+    ...productModule.typeDefs,
   ].join('')),
   resolvers: merge(
-    productModule.resolvers
-  )
+    productModule.resolvers,
+  ),
 };
