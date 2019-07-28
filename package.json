@@ -29,7 +29,7 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "lint": "eslint src test"
+    "lint": "eslint src tests"
   },
   "eslintConfig": {
     "env": {

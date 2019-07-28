@@ -1,11 +1,11 @@
 const {
-  gql
+  gql,
 } = require('apollo-server-express');
 const mockingoose = require('mockingoose').default;
 const {
   mongo: {
     MongoError,
-  }
+  },
 } = require('mongoose');
 const { testClient } = require('../../../../helpers');
 const { Product } = require('../../../../../src/models');
