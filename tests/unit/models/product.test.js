@@ -1,7 +1,7 @@
 const {
   Error: {
-    ValidationError
-  }
+    ValidationError,
+  },
 } = require('mongoose');
 const { Product } = require('../../../src/models');
 const validationMessages = require('../../fixtures/models/products/validation-messages.json');
