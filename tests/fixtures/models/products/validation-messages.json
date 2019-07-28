@@ -1,0 +1,7 @@
+{
+  "REQUIRED_FIELDS": "Product validation failed: quantity: Path `quantity` is required., sellPrice: Path `sellPrice` is required., buyPrice: Path `buyPrice` is required., name: Path `name` is required., code: Path `code` is required.",
+  "BUY_PRICE_HIGHER_THAN_SELL_PRICE": "Product validation failed: sellPrice: Sell price must be greater than or equal to buy price",
+  "DISCOUNT_LESS_THAN_ZERO": "Product validation failed: discountPercent: Path `discountPercent` (-1) is less than minimum allowed value (0).",
+  "DISCOUNT_HIGHER_THAN_HUNDRED": "Product validation failed: discountPercent: Path `discountPercent` (101) is more than maximum allowed value (100).",
+  "QUANTITY_LESS_THAN_ZERO": "Product validation failed: quantity: Path `quantity` (-1) is less than minimum allowed value (0)."
+}
