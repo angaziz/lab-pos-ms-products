@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "5d3c4c980c79592fead7aaaa",
+    "code": "BOOK01",
+    "name": "Agile Principles - Robert C. Martin",
+    "buyPrice": 20,
+    "sellPrice": 30,
+    "discountPercent": 0,
+    "quantity": 10,
+    "createdAt": "1564232856176",
+    "updatedAt": "1564232856176"
+  },
+  {
+    "_id": "5d3c4c980c79592fead7bbbb",
+    "code": "BOOK02",
+    "name": "Refactoring - Martin Fowler",
+    "buyPrice": 20,
+    "sellPrice": 30,
+    "discountPercent": 0,
+    "quantity": 10,
+    "createdAt": "1564232856176",
+    "updatedAt": "1564232856176"
+  },
+  {
+    "_id": "5d3c4c980c79592fead7cccc",
+    "code": "BOOK03",
+    "name": "Domain Specific Language - Martin Fowler",
+    "buyPrice": 20,
+    "sellPrice": 30,
+    "discountPercent": 0,
+    "quantity": 10,
+    "createdAt": "1564232856176",
+    "updatedAt": "1564232856176"
+  },
+  {
+    "_id": "5d3c4c980c79592fead7dddd",
+    "code": "BOOK04",
+    "name": "Clean Architecture - Robert C. Martin",
+    "buyPrice": 20,
+    "sellPrice": 30,
+    "discountPercent": 0,
+    "quantity": 10,
+    "createdAt": "1564232856176",
+    "updatedAt": "1564232856176"
+  },
+  {
+    "_id": "5d3c4c980c79592fead7eeee",
+    "code": "BOOK05",
+    "name": "The Clean Coder - Robert C. Martin",
+    "buyPrice": 20,
+    "sellPrice": 30,
+    "discountPercent": 0,
+    "quantity": 10,
+    "createdAt": "1564232856176",
+    "updatedAt": "1564232856176"
+  }
+]

@@ -6,12 +6,9 @@ const { buildFederatedSchema } = require('@apollo/federation');
 
 const modules = require('../modules');
 const models = require('../models');
-const connectDb = require('./connect-db');
 
-module.exports = async () => {
+module.exports = () => {
   try {
-    await connectDb();
-
     const server = new ApolloServer({
       schema: buildFederatedSchema([
         {
@@ -29,7 +26,10 @@ module.exports = async () => {
     const app = express();
     server.applyMiddleware({ app });
 
-    return app;
+    return {
+      app,
+      server,
+    };
   } catch (error) {
     throw error;
   }
